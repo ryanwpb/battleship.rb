@@ -1,6 +1,3 @@
-require './position'
-require './ship'
-
 class Player
   def initialize()
   end
@@ -33,23 +30,9 @@ class Ship
   def length
     @length
   end
-  def place(across_start,down_start,orientation)
-    @across_start = across
-    @down_start = down
+  def place(across,down,orientation)
+    @across = across
+    @down = down
     @orientation = orientation
   end
-
-  def initialize(x, y)
-   @position = [x, y]
-   @hit = 0
- end
- def position
-     @position
-   end
-
-   def is_hit
-     @hit
-   end
- end
-
-ship = Ship.new(4)
+end
