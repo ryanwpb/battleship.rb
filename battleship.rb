@@ -1,3 +1,6 @@
+require './ship'
+require './grid'
+
 class Player
   def initialize()
   end
@@ -19,20 +22,5 @@ class ComputerPlayer < Player
   end
   def name
     "HAL 9000"
-  end
-end
-
-
-class Ship
-  def initialize(length)
-    @length = length
-  end
-  def length
-    @length
-  end
-  def place(across,down,orientation)
-    @across = across
-    @down = down
-    @orientation = orientation
   end
 end
