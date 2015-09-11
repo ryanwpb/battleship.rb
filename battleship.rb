@@ -4,7 +4,11 @@ require './grid'
 class Player
   def initialize()
   end
+  def grid
+    grid = Grid.new
+  end
 end
+
 
 
 class HumanPlayer < Player
